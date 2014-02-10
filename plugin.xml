@@ -23,6 +23,11 @@
                         </feature>
                 </config-file>
 
+                <config-file target="AndroidManifest.xml" parent="/*">
+                   <uses-permission android:name="android.permission.RECEIVE_SMS" />
+                   <uses-permission android:name="android.permission.SEND_SMS" />
+                </config-file>
+
                 <js-module src="www/android/Sms.js" name="Sms">
                         <clobbers target="navigator.sms" />
                 </js-module>
