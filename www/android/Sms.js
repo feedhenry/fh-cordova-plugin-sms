@@ -5,3 +5,5 @@ var sms = {
     exec(success, fail, "Sms", "send", [number, text]);
   }
 };
+
+module.exports = sms;
